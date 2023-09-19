@@ -132,23 +132,24 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\base\application_details.cpp" />
-    <ClCompile Include="..\base\logger.cpp" />
-    <ClCompile Include="..\base\udp.cpp" />
-    <ClCompile Include="main.cpp" />
-    <ClCompile Include="mother_app.cpp" />
+    <ClCompile Include="..\..\base\application_details.cpp" />
+    <ClCompile Include="..\..\base\logger.cpp" />
+    <ClCompile Include="..\..\base\udp.cpp" />
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\mother_app.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\base\application_details.h" />
-    <ClInclude Include="..\base\logger.h" />
-    <ClInclude Include="..\base\queue_types.h" />
-    <ClInclude Include="..\base\spin_lock.h" />
-    <ClInclude Include="..\base\time_utils.h" />
-    <ClInclude Include="..\base\udp.h" />
-    <ClInclude Include="..\base\udp_messages.h" />
-    <ClInclude Include="..\base\utils.h" />
-    <ClInclude Include="..\base\wait_free_queue.h" />
-    <ClInclude Include="mother_app.h" />
+    <ClInclude Include="..\..\base\application_details.h" />
+    <ClInclude Include="..\..\base\logger.h" />
+    <ClInclude Include="..\..\base\pch.h" />
+    <ClInclude Include="..\..\base\queue_types.h" />
+    <ClInclude Include="..\..\base\spin_lock.h" />
+    <ClInclude Include="..\..\base\time_utils.h" />
+    <ClInclude Include="..\..\base\udp.h" />
+    <ClInclude Include="..\..\base\udp_messages.h" />
+    <ClInclude Include="..\..\base\utils.h" />
+    <ClInclude Include="..\..\base\wait_free_queue.h" />
+    <ClInclude Include="..\src\mother_app.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

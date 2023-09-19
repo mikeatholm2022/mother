@@ -18,52 +18,55 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="main.cpp">
+    <ClCompile Include="..\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="mother_app.cpp">
+    <ClCompile Include="..\src\mother_app.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\base\application_details.cpp">
+    <ClCompile Include="..\..\base\application_details.cpp">
       <Filter>base</Filter>
     </ClCompile>
-    <ClCompile Include="..\base\logger.cpp">
+    <ClCompile Include="..\..\base\logger.cpp">
       <Filter>base</Filter>
     </ClCompile>
-    <ClCompile Include="..\base\udp.cpp">
+    <ClCompile Include="..\..\base\udp.cpp">
       <Filter>base</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="mother_app.h">
+    <ClInclude Include="..\..\base\application_details.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\logger.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\pch.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\queue_types.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\spin_lock.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\time_utils.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\udp.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\udp_messages.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\utils.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\base\wait_free_queue.h">
+      <Filter>base</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\mother_app.h">
       <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="..\base\application_details.h">
-      <Filter>base</Filter>
-    </ClInclude>
-    <ClInclude Include="..\base\logger.h">
-      <Filter>base</Filter>
-    </ClInclude>
-    <ClInclude Include="..\base\queue_types.h">
-      <Filter>base</Filter>
-    </ClInclude>
-    <ClInclude Include="..\base\spin_lock.h">
-      <Filter>base</Filter>
-    </ClInclude>
-    <ClInclude Include="..\base\time_utils.h">
-      <Filter>base</Filter>
-    </ClInclude>
-    <ClInclude Include="..\base\udp.h">
-      <Filter>base</Filter>
-    </ClInclude>
-    <ClInclude Include="..\base\udp_messages.h">
-      <Filter>base</Filter>
-    </ClInclude>
-    <ClInclude Include="..\base\utils.h">
-      <Filter>base</Filter>
-    </ClInclude>
-    <ClInclude Include="..\base\wait_free_queue.h">
-      <Filter>base</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>
