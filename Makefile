@@ -12,7 +12,7 @@ LIB_DIRS = -L"$(BOOST_ROOT)/lib" -L"$(CHAOS_ROOT)/bin"
 
 
 # By default lets just build DEBUG
-CXXFLAGS = -O0 -ggdb3 -fPIC -std=c++17 -DBOOST_BIND_GLOBAL_PLACEHOLDERS
+CXXFLAGS = -O0 -ggdb3 -fPIC -std=c++20 -DBOOST_BIND_GLOBAL_PLACEHOLDERS
 
 
 VERSION=v1.0.0
@@ -20,17 +20,15 @@ VERSION=v1.0.0
 
 
 #ifeq ($(DEBUG),1)
-#   CXXFLAGS = -O0 -ggdb3 -fPIC -std=c++17
+#   CXXFLAGS = -O0 -ggdb3 -fPIC -std=c++20
 #else
-#   CXXFLAGS = -O3 -pthread -fPIC -fomit-frame-pointer -march=native -Wno-write-strings -ffloat-store -ffast-math -fno-math-errno -std=c++17 -DVERSION=\"$(VERSION)\"
+#   CXXFLAGS = -O3 -pthread -fPIC -fomit-frame-pointer -march=native -Wno-write-strings -ffloat-store -ffast-math -fno-math-errno -std=c++20 -DVERSION=\"$(VERSION)\"
 #endif
 
 # For speed
 #CXXFLAGS = -O3 -pthread -ffast-math -ffloat-store -fPIC
 #CXXFLAGS = -O3 -pthread -fPIC
 # Not currently supported -flto -fmudflapir -fmudflapth
-# For c++14 testing
-# CXXFLAGS = -O0 -pthread -g -fPIC -std=c++14
 # For debugging with the most verbose errors and warnings
 #CXXFLAGS = -O0 -pthread -g -fPIC -Wall
 

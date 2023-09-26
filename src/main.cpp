@@ -81,6 +81,7 @@ int main()
     // Clean-up time
     chaos::Logger::instance()->stop();
     chaos::sleep(1);
+    chaos::Logger::instance()->join();
     //delete chaos::Logger::instance();
     //delete chaos::ApplicationDetails::instance();
 
